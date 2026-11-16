@@ -7,10 +7,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/")
 public class LivrosController {
 
-    @GetMapping
+    @GetMapping ("/")
+    public String raiz(){
+        return "redirect:/livros";
+    }
+    @GetMapping ("/livros")
     public String inicio(){
         return "livros/inicio";
     }
