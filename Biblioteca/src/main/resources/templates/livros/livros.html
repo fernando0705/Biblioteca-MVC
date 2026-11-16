@@ -1,0 +1,56 @@
+<!--view-->
+<!DOCTYPE html>
+<html xmlns:th="...">
+<head>
+    <title>Biblioteca/Livros</title>
+</head>
+<body>
+<h1 th:text=" 'Sistema de Biblioteca' "></h1>
+
+<section>
+    <h2>Livro</h2>
+    <p>Título: <span th:text="${livro.titulo}"></span></p>
+    <p>Autor: <span th:text="${livro.autor}"></span></p>
+    <p>ISBN: <span th:text="${livro.isbn}"></span></p>
+</section>
+
+<hr>
+
+<section>
+    <h2>Autor</h2>
+    <p>Nome: <span th:text="${autor.nome}"></span></p>
+    <p>Nacionalidade: <span th:text="${autor.nacionalidade}"></span></p>
+    <p>Data de nascimento: <span th:text="${autor.dataNascimento}"></span></p>
+</section>
+
+<hr>
+
+<section>
+    <h2>Categoria</h2>
+    <p>Nome: <span th:text="${categoria.nome}"></span></p>
+    <p>Descrição: <span th:text="${categoria.descricao}"></span></p>
+    <p>Código: <span th:text="${categoria.codigo}"></span></p>
+</section>
+
+<hr>
+
+<section>
+    <h2>Usuário</h2>
+    <p>Nome: <span th:text="${usuario.nome}"></span></p>
+    <p>Email: <span th:text="${usuario.email}"></span></p>
+    <p>CPF: <span th:text="${usuario.cpf}"></span></p>
+</section>
+
+<hr>
+
+<section>
+    <h2>Empréstimo</h2>
+    <p>Data do empréstimo: <span th:text="${emprestimo.dataEmprestimo}"></span></p>
+    <p>Data da devolução: <span th:text="${emprestimo.dataDevolucao}"></span></p>
+    <p>Status: <span th:text="${emprestimo.status}"></span></p>
+    <p>Livro: <span th:text="${emprestimo.livro}"></span></p>
+    <p>Usuário: <span th:text="${emprestimo.usuario}"></span></p>
+</section>
+
+</body>
+</html>
